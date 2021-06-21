@@ -1,16 +1,9 @@
 function loadAccordion(){
     $( function() {
-        $( "#accordion" ).accordion();
+        $( "#accordion" ).accordion({
+            heightStyle: "content",
+        });
     });
 }
 
 loadAccordion();
-
-/* Переопределение */
-/* 
-    window.addEventListener('resize', function(){
-        if (document.documentElement.clientWidth <= 768){
-            loadAccordion();
-        }
-    });
-*/
